@@ -1,0 +1,11 @@
+.footer {
+    background: $primary;
+    color: $light;
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    h3 {
+        font-family: 'Comfortaa', cursive !important;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,9 @@
+// Day-Theme
+$day-primary: mat-palette($mat-purple, 600);
+$day-accent: mat-palette($mat-teal, A400, A100, A700);
+$day-warn: mat-palette($mat-pink, 600);
+$day-theme: mat-light-theme($day-primary, $day-accent, $day-warn);
+$app-background: map_get($mat-light-theme-background, background);
+$app-color: map_get($mat-dark-theme-foreground, base);
+
+@include angular-material-theme($day-theme);

@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+// Partials imports
+@import './assets/partials/variables-mixins';
+@import './assets/partials/reset';
+@import './assets/partials/theming';
+@import './assets/partials/day-theme';
+@import './assets/partials/night-theme';
+@import './assets/partials/fonts';
+@import './assets/partials/navbar';
+@import './assets/partials/home';
+@import './assets/partials/footer';
+
+.the-wrapper {
+    color: $light;
+    padding: 1rem;
+    // background:  rgba($color: $light, $alpha: .2);
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+    div {
+        color: $dark;
+        border-radius: 8px;
+        padding: 1rem;
+        & + div {
+            margin-top: 1rem;
+        }
+    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    button {
+        & + button {
+            margin-left: 0 16px;
+        }
+    }
+    .icon-spacer {
+        padding: 5px;
+        border-left: 1px dotted rgba($dark, .7);
+    }
+    .bg-light {
+        background: lighten($color: $light, $amount: 5);
+    }
+    .shadow-2 {
+        @include card(2);
+    }
+}
+.spacer {
+    flex: 1 1 auto;
+}

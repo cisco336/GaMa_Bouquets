@@ -1,0 +1,14 @@
+.mat-toolbar, .mat-toolbar-row, .mat-toolbar-single-row {
+    font-family: 'Comfortaa', cursive !important; 
+    font-size: 3rem !important;
+    font-weight: 300 !important;
+    line-height: 3rem;
+ }
+.mat-toolbar {
+    background: transparent;
+    color: $primary;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: auto !important;
+    padding: 1rem !important;
+} 

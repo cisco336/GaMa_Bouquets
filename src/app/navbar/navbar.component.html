@@ -1,0 +1,30 @@
+<mat-toolbar>
+    GaMa
+    <span class="spacer"></span>
+    <button mat-icon-button>
+        <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="mainMenu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #mainMenu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>
+                <fa-icon [icon]="['fas', 'spa']"></fa-icon>
+            </mat-icon>
+            <span>Products</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>
+                <fa-icon [icon]="['fas', 'info-circle']"></fa-icon>
+            </mat-icon>
+            <span>About</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>
+                    <fa-icon [icon]="['fas', 'user']"></fa-icon>
+            </mat-icon>
+            <span>Contact</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>

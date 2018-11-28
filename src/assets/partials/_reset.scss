@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Metrophobic', sans-serif;
+}
+html, body { 
+    height: 100%; 
+}
+body { 
+    
+    // background:
+    // linear-gradient(135deg, hsla(271.32, 70.75%, 72.07%, 1) 0%, hsla(271.32, 70.75%, 72.07%, 0) 70%),
+    // linear-gradient(25deg, hsl(213, 34%, 66%) 10%, hsla(59.08, 19.78%, 67.7%, 0) 80%),
+    // linear-gradient(315deg, hsla(224.01, 72.06%, 64.99%, 1) 15%, hsla(224.01, 72.06%, 64.99%, 0) 80%),
+    // linear-gradient(245deg, hsl(0, 0%, 13%) 100%, hsla(63.86, 0%, 100%, 0) 70%);
+    background: linear-gradient(to bottom, darken($color: $light, $amount: 1), darken($color: $light, $amount: 20));
+
+    background-size: cover;
+    background-attachment: fixed;
+}
