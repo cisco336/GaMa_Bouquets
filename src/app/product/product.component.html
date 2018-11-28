@@ -1,0 +1,27 @@
+<div class="the-wrapper">
+  <button color="warn" mat-button (click)="goBack()">
+    <mat-icon>keyboard_return</mat-icon>
+    Go Back...
+  </button>
+  <div class="product-wrapper" *ngFor="let cont of content">
+    <h1>{{cont.title}}</h1>
+    <h2>{{cont.category}}</h2>
+    <img src="{{cont.imgRoute}}" alt="">
+    <div class="card buttons">
+      <button mat-icon-button [color]="favorite ? 'warn' : ''" (click)="favorite = !favorite">
+        <mat-icon>favorite_border</mat-icon>
+      </button>
+      <span class="icon-spacer"></span>
+      <button mat-icon-button>
+        <mat-icon>share</mat-icon>
+      </button>
+      <span class="icon-spacer"></span>
+      <button mat-icon-button [color]="addToCart ? 'accent' : ''" (click)="addToCart = !addToCart">
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+      <span class="icon-spacer"></span>
+      <button mat-stroked-button>Buy</button>
+    </div>
+    <p>{{cont.content}}</p>
+  </div>
+</div>

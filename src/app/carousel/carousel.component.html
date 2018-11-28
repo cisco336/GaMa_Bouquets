@@ -1,0 +1,13 @@
+<ngb-carousel *ngIf="content.length > 0">
+  <ng-template ngbSlide  *ngFor="let cont of content; let i = index" id="{{i}}" >
+    <img [src]='cont.imgRoute' alt="{{cont.Alt}}">
+    <div class="carousel-caption">
+      <h3>{{cont.category}}</h3>
+      <p>{{cont.content}}</p>
+      <button mat-raised-button color="accent">Button</button>
+    </div>
+  </ng-template>
+  <ng-template #loading>
+    <h1>Loading</h1>
+  </ng-template>
+</ngb-carousel>

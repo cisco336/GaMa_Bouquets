@@ -1,0 +1,18 @@
+.card {
+    @include card(3);
+    .card-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding-bottom: 0px;
+    }
+    .card-content {
+        color: $mid-dark;
+        margin-top: 0px !important;
+    }
+    &:not(:first-child) {
+        margin-top: 16px;
+    }
+}
+

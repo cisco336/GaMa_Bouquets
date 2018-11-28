@@ -1,0 +1,20 @@
+<div class="the-wrapper">
+  <div  *ngFor = "let cont of content">
+    <h4>{{cont.title}}</h4>
+    <h5>{{cont.category}}</h5>
+    <img class="product-img" src="{{cont.imgRoute}}" alt="">
+    <div class="card buttons">
+      <button mat-icon-button [color]="favorite ? 'warn' : ''" (click)="favorite = !favorite">
+        <mat-icon>favorite_border</mat-icon>
+      </button>
+      <span class="icon-spacer"></span>
+      <button mat-icon-button >
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+      <span class="icon-spacer"></span>
+      <button routerLink="/product/{{cont.id}}" mat-icon-button >
+        <mat-icon>details</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

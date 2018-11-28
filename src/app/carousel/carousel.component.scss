@@ -1,0 +1,21 @@
+@import '../../assets/css/bootstrap.min.css';
+@import '../../assets/partials/variables-mixins';
+@import '../../assets/partials/fonts';
+
+* {
+    outline: none !important;
+}
+
+img {
+    height: 100% !important;
+    width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: auto !important;
+    bottom: 16px !important;
+}
+.carousel-control-prev {
+    left: auto !important; 
+    right: 35px;
+}
