@@ -10,7 +10,7 @@
         "category": "Category 1",
         "author": "Francisco Arleo",
         "content": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
-        "excerpt": "excerpt laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+        "excerpt": "excerpt laudantium enim quasi est quidem magnam",
         "imgRoute": "/assets/img/bouquets/1.png",
         "imgAlt": "image 1"
     },
@@ -25,8 +25,38 @@
         "category": "Category 2",
         "author": "Francisco Arleo",
         "content": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
-        "excerpt": "excerpt laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+        "excerpt": "excerpt laudantium enim quasi est quidem magnam",
         "imgRoute": "/assets/img/garden.jpg",
         "imgAlt": "image 2"
+    },
+    {
+        "id": 3,
+        "slider":true,
+        "home":true,
+        "principal":true,
+        "hot":false,
+        "new":false,
+        "title": "Title 3",
+        "category": "Category 3",
+        "author": "Francisco Arleo",
+        "content": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+        "excerpt": "excerpt laudantium enim quasi est quidem magnam",
+        "imgRoute": "/assets/img/bouquets/2.png",
+        "imgAlt": "image 3"
+    },
+    {
+        "id": 4,
+        "slider":true,
+        "home":true,
+        "principal":true,
+        "hot":false,
+        "new":false,
+        "title": "Title 4",
+        "category": "Category 3",
+        "author": "Francisco Arleo",
+        "content": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+        "excerpt": "excerpt laudantium enim quasi est quidem magnam",
+        "imgRoute": "/assets/img/bouquets/3.png",
+        "imgAlt": "image 4"
     }
 ]

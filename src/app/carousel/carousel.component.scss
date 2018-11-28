@@ -10,12 +10,54 @@ img {
     height: 100% !important;
     width: 100%;
 }
-
+.carousel-item {
+    opacity: .5;
+    display: block;
+    position: absolute;
+    will-change: opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        opacity: 1;
+        transition: all ease-in-out .5s;
+        img {
+            animation-name: amply;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+        }
+    }
+    .carousel-caption {
+        background: linear-gradient(to right, rgba($light, .8), rgba(0,0,0,0));
+        text-align: left;
+        color: $primary;
+        padding: 1rem;
+        left: auto;
+        right: auto;
+        bottom: 0%;
+        top: auto;
+        p {
+            padding: 0 !important;
+        }
+    }
+}
 .carousel-control-next, .carousel-control-prev {
-    top: auto !important;
-    bottom: 16px !important;
+    bottom: auto !important;
+    top: 16px !important;
 }
 .carousel-control-prev {
     left: auto !important; 
     right: 35px;
+}
+@keyframes amply {
+    from {
+        filter: grayscale(1);
+    }
+    to {
+        filter: grayscale(0);
+    }
 }

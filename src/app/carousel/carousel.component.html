@@ -2,9 +2,9 @@
   <ng-template ngbSlide  *ngFor="let cont of content; let i = index" id="{{i}}" >
     <img [src]='cont.imgRoute' alt="{{cont.Alt}}">
     <div class="carousel-caption">
-      <h3>{{cont.category}}</h3>
-      <p>{{cont.content}}</p>
-      <button mat-raised-button color="accent">Button</button>
+      <h4>{{cont.category}}</h4>
+      <p>{{cont.excerpt}}</p>
+      <!-- <button mat-raised-button color="accent">Button</button> -->
     </div>
   </ng-template>
   <ng-template #loading>
