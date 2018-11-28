@@ -1,7 +1,6 @@
-import { Component, OnInit, ViewEncapsulation, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { DataService } from '../data-service.service';
-import { timeout } from 'q';
 
 @Component({
   selector: 'app-carousel',
@@ -10,11 +9,11 @@ import { timeout } from 'q';
   providers: [NgbCarouselConfig],
   encapsulation: ViewEncapsulation.Native
 })
-export class CarouselComponent implements OnInit, AfterViewInit {
+export class CarouselComponent implements OnInit {
   showNavigationArrows = true;
   showNavigationIndicators = false;
   public content = [];
-  constructor(private elementRef: ElementRef, config: NgbCarouselConfig, private _dataService: DataService) {
+  constructor(config: NgbCarouselConfig, private _dataService: DataService) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
    }
@@ -27,14 +26,4 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       });
     });
   }
-
-  ngAfterViewInit() {
-    var d1 = this.elementRef.nativeElement.querySelector('.carousel-control-next-icon');
-    setTimeout(
-      // d1.insertAdjacentHTML('beforeend', '<div class="two">two</div>');
-      console.log(this.elementRef)
-    , 10
-    );
-  }
-
 }
